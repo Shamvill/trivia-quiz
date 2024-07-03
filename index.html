@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- navbar st -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end  -->
+       <!-- crousel st -->
+        <div class="welcome">
+            <h1>Welcome to trivia-quiz</h1>
+        </div>
+        <div class="Home">
+            <h2>Home</h2>
+        </div>
+       <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="https://img.freepik.com/free-vector/multiple-option-quiz-game-template-problem-solving-concept_1017-45303.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="data:image/png;base64,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" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.shutterstock.com/image-vector/giveaway-banner-post-template-win-260nw-1775073719.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+        <!-- crousel end -->
+         <!-- About st -->
+          <div class="About">
+            <h2>About</h2>
+        </div>
+        <p><i>A quiz exam is a focused assessment designed to test knowledge on specific topics within a short timeframe. Typically, these exams consist of concise questions that require quick recall and understanding of key concepts. They serve as efficient tools for evaluating comprehension and retention of material learned in a course or training session. Quiz exams often emphasize speed and accuracy, encouraging participants to think swiftly under pressure while demonstrating their grasp of the subject matter. These assessments are valuable in reinforcing learning outcomes and identifying areas that may require further review or clarification.</i></p>
+        <p><i>A quiz exam is a focused assessment designed to test knowledge on specific topics within a short timeframe. Typically, these exams consist of concise questions that require quick recall and understanding of key concepts. They serve as efficient tools for evaluating comprehension and retention of material learned in a course or training session. Quiz exams often emphasize speed and accuracy, encouraging participants to think swiftly under pressure while demonstrating their grasp of the subject matter. These assessments are valuable in reinforcing learning outcomes and identifying areas that may require further review or clarification.</i></p>
+        <p><i>A quiz exam is a focused assessment designed to test knowledge on specific topics within a short timeframe. Typically, these exams consist of concise questions that require quick recall and understanding of key concepts. They serve as efficient tools for evaluating comprehension and retention of material learned in a course or training session. Quiz exams often emphasize speed and accuracy, encouraging participants to think swiftly under pressure while demonstrating their grasp of the subject matter. These assessments are valuable in reinforcing learning outcomes and identifying areas that may require further review or clarification.</i></p>
+        <p><i>A quiz exam is a focused assessment designed to test knowledge on specific topics within a short timeframe. Typically, these exams consist of concise questions that require quick recall and understanding of key concepts. They serve as efficient tools for evaluating comprehension and retention of material learned in a course or training session. Quiz exams often emphasize speed and accuracy, encouraging participants to think swiftly under pressure while demonstrating their grasp of the subject matter. These assessments are valuable in reinforcing learning outcomes and identifying areas that may require further review or clarification.</i></p>
+        
+          <!-- About end -->
+           <div class="quiz">
+            <h2>Quiz</h2>
+           </div>
+           <div class="question">
+            
+            <button id="start" type="button" class="btn btn-primary">start</button><br>
+            <ul id="ulo">
+            </ul>
+            <label for="Answer"><h3>Answer<h3>
+            </label><br>
+            <input type="text" name="" id="Answer">
+           </div>
+            <!-- form st -->
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input required type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input required type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input required type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+              <!-- form end -->
+           <!-- footer st -->
+           <footer style="background-color: #f8f9fa; padding: 20px; text-align: center; border-top: 1px solid #e7e7e7;">
+            <p>© 2024 QuizMaster | <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a> | <a href="/contact">Contact Us</a></p>
+            <p>Follow us on: 
+              <a href="https://facebook.com" target="_blank">Facebook</a> | 
+              <a href="https://twitter.com" target="_blank">Twitter</a> | 
+              <a href="https://instagram.com" target="_blank">Instagram</a> | 
+              <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </p>
+            <p>QuizMaster | Making Learning Fun and Engaging</p>
+          </footer>
+            <!-- footer end -->
+             
+            
+           <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
